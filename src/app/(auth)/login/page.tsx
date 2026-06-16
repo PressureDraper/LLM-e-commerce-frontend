@@ -1,11 +1,12 @@
+import { LoginForm } from '@/modules/auth/components/LoginForm'
 import Image from 'next/image'
 
 export default function LoginPage() {
     return (
         <main className="flex-1 bg-neutral-50 flex">
-            <div className="bg-neutral-50 w-full lg:w-4/9 p-5 text-center">
+            <div className="w-full lg:w-4/9 p-5 flex flex-col items-center justify-center">
                 <h1 className="font-normal text-7xl font-display">Valtierrè</h1>
-                
+                <LoginForm />
             </div>
             <div className="w-5/9 relative hidden lg:block">
                 <Image

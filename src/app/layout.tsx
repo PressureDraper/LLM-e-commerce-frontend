@@ -3,7 +3,7 @@ import { Playfair_Display, Inter } from 'next/font/google'
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Vetierrè - Luxury Fashion e-commerce",
+    title: "Valtierrè - Luxury Fashion e-commerce",
     description: "Vetierrè it's an Italian fashioned e-commerce powered by LLM, RAG and Embeddings integrations to provide the best user experience in their shopping.",
 };
 
