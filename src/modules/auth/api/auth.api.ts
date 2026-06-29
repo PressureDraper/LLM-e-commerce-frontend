@@ -6,3 +6,7 @@ export const userRegister = async (body: UserRegisterDTO): Promise<UserResponse>
 
     return data;
 }
+
+export const userLogout = async () => {
+    await api.post('/api/v1/auth/logout');
+}
