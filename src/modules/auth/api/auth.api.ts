@@ -10,3 +10,9 @@ export const userRegister = async (body: UserRegisterDTO): Promise<UserResponse>
 export const userLogout = async () => {
     await api.post('/api/v1/auth/logout');
 }
+
+export const userProfile = async () => {
+    const { data } = await api.get('/api/v1/auth/profile');
+
+    return data;
+}
