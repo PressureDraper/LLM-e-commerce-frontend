@@ -1,16 +1,20 @@
 'use client'
 
-import useLogout from "@/modules/auth/hooks/useLogout"
-import useProfile from "@/modules/auth/hooks/useProfile";
-
 export default function HomePage() {
-    const { loading, error, logout } = useLogout();
-    const { loading: profileLoading, error: profileError, getProfile, userData } = useProfile();
 
     return (
         <div className="flex justify-around">
-            <button onClick={() => getProfile()} className="rounded border p-1 cursor-pointer">Fetch Profile</button>
-            <button onClick={() => logout()} className="rounded border p-1 cursor-pointer">Logout</button>
+            
+            <video
+                className="inset-0 h-full w-full object-cover z-0"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload='none'
+            >
+                <source src="https://pub-2340d562e49941639edaa262ef4996bc.r2.dev/home/loop_bg_2.webm" type="video/webm" />
+            </video>
         </div>
     )
 }
